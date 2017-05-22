@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ block "title" . }}
+      <!-- Blocks may include default content. -->
+      {{ .Site.Title }}
+    {{ end }}</title>
+
+    <link href="css/styles-theme.css" rel="stylesheet">
+
+  </head>
+  <body>
+  <h1>THIS IS BASEOF DERIVED FROM THEME FOLDER</h1>
+    <!-- Code that all your templates share, like a header -->
+
+    {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+
+    <!-- More shared code, perhaps a footer -->
+  </body>
+</html>

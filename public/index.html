@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta name="generator" content="Hugo 0.19" />
+    <meta charset="utf-8">
+    <title>
+	ThemeIndex
+</title>
+      <link href="css/styles-primary.css" rel="stylesheet">
+
+  </head>
+  <body>
+  <h1>THIS IS BASEOF FROM PRIMARY</h1>
+    
+
+    
+<div>
+  <h1>My New Hugo Site</h1>
+  <h1>The ThemeIndex</h1>
+  
+
+<h2>Files</h2>
+
+<h3>Main layout baseof.html > styles-primary.css = blackbackground </h3>
+<h3>Theme layout baseof.html > styles-theme.css = greenbackground </h3>
+
+<h2>Expected Behaviour - Rename files to simulate unavailability.</h2>
+<h3>Eg; "index.html" -> "Xindex.html" </h3>
+<h3>Eg; "baseof.html" -> "Xbaseof.html" </h3>
+
+<h2>Expected Behaviour</h2>
+
+<ul>
+	<li>#1 Main > layouts > index.html &amp; Main > layouts > baseof.html == White Text / Black Background </li>
+	<li>#2 Main > layouts > index.html &amp; Theme > layouts > baseof.html == White Text / Green Background </li>
+	<li>#3 Theme > layouts > index.html &amp; Theme > layouts > baseof.html == White Text / Green Background </li>
+	<li>#4 Theme > layouts > index.html &amp; Main  > layouts > baseof.html == White Text / Green Background </li>
+</ul>
+
+<h1>#4 Results in a Blank Page. This should be white text on a black background.</h1>
+
+</div>
+
+
+    
+  </body>
+</html>
